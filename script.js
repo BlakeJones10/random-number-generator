@@ -5,3 +5,11 @@ function generateRandomNumber() {
     document.getElementById("random-number").innerHTML = randomNumber;
 }
 
+function showMessage() {
+    const randomNumber = document.getElementById("random-number").innerHTML;
+    if (randomNumber > 50) {
+        document.getElementById("message").innerHTML = "Greater than 50";
+    } else {
+        document.getElementById("message").innerHTML = "Less than 50";
+    }
+}
